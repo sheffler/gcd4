@@ -16,6 +16,18 @@ The function `dispatch_after` is not included, because the *blocks* feature is n
 If I manually construct the `swiftc` compile command, I can create an executable.
 
     swiftc -v -o gcd4 Sources/main.swift -I .build/debug -j8 -Onone -g -Xcc -fblocks -Xcc -F-module-map=Packages/CDispatch-1.0.0/module.modulemap -I Packages/CDispatch-1.0.0 -I /usr/local/include
+    
+and run it.
+
+    ./gcd4
+    Hello World!
+    someInts is of type [Int] with 0 items.
+    someInts is [1, 2, 3] with 3 items.
+    Now:0
+    Time:2811311522557
+    Main:0x00000000009e1570
+    Delayed!
+
 
 
 
