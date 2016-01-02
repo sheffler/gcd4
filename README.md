@@ -1,6 +1,6 @@
 This little demo shows Swift calling `dispatch_after` with a block that prints a line after a delay.  The dispatch queue library is wrapped in a Swift module.
 
-
+[This issue tracked at https://bugs.swift.org/browse/SR-397]
 
 When I try this
 
